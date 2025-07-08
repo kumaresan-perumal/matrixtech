@@ -1,2 +1,2 @@
-# sample
+# startup company webpage
 company portal
