@@ -4,119 +4,154 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MatrixTech Solutions Pvt Ltd</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    section {
+      padding: 60px 0;
+    }
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+  </style>
 </head>
-<body class="font-sans text-gray-800">
+<body>
 
-  <!-- Navbar -->
-  <header class="fixed w-full bg-white shadow z-50">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="text-xl font-bold text-blue-700">MatrixTech</div>
-      <nav class="space-x-4 text-sm font-medium">
-        <a href="#hero" class="text-gray-700 hover:text-blue-700">Home</a>
-        <a href="#services" class="text-gray-700 hover:text-blue-700">Services</a>
-        <a href="#about" class="text-gray-700 hover:text-blue-700">About</a>
-        <a href="#portfolio" class="text-gray-700 hover:text-blue-700">Portfolio</a>
-        <a href="#contact" class="text-gray-700 hover:text-blue-700">Contact</a>
-      </nav>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="#">MatrixTech</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-end text-lg-start">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
     </div>
-  </header>
+  </div>
+</nav>
 
-  <!-- Spacer for navbar -->
-  <div class="h-16"></div>
+<!-- Spacer for fixed navbar -->
+<div style="height: 70px;"></div>
 
-  <!-- Hero Section -->
-  <section id="hero" class="bg-blue-700 text-white py-20 text-center">
-    <h1 class="text-4xl md:text-5xl font-bold">We Build Scalable Software</h1>
-    <p class="mt-4 text-lg">Custom Software Development | Web & Mobile Apps | Cloud Solutions</p>
-    <a href="#contact" class="mt-6 inline-block bg-white text-blue-700 px-6 py-2 rounded-full font-semibold">Contact Us</a>
-  </section>
+<!-- Hero Section -->
+<section id="hero" class="bg-primary text-white text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">We Build Scalable Software</h1>
+    <p class="lead">Web Apps | Mobile Solutions | Cloud Platforms</p>
+    <a href="#contact" class="btn btn-light mt-3">Get in Touch</a>
+  </div>
+</section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-16 bg-gray-100">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl font-bold">Our Services</h2>
-      <p class="text-gray-600 mt-2">Tailored software solutions to grow your business</p>
-    </div>
-    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6 px-4">
-      <div class="bg-white p-6 shadow rounded-xl">
-        <h3 class="font-bold text-xl mb-2">Billing Software Development</h3>
-        <p>Modern, fast, and secure desktop built with latest technologies.</p>
-      </div>
-      <div class="bg-white p-6 shadow rounded-xl">
-        <h3 class="font-bold text-xl mb-2">Web Development</h3>
-        <p>Modern, fast, and secure websites built with latest technologies.</p>
-      </div>
-      <div class="bg-white p-6 shadow rounded-xl">
-        <h3 class="font-bold text-xl mb-2">Mobile Apps</h3>
-        <p>Native & cross-platform mobile apps for Android and iOS.</p>
-      </div>
-      <div class="bg-white p-6 shadow rounded-xl">
-        <h3 class="font-bold text-xl mb-2">Cloud Solutions</h3>
-        <p>Scalable cloud infrastructure setup, migration, and management.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Us Section -->
-  <section id="about" class="py-16">
-    <div class="max-w-4xl mx-auto text-center px-4">
-      <h2 class="text-3xl font-bold mb-4">About Us</h2>
-      <p class="text-gray-600">MatrixTech Solutions is a team of experienced engineers and designers delivering world-class software tailored to business needs. From startups to enterprises, we build solutions that scale.</p>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="py-16 bg-gray-100">
-    <div class="max-w-5xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10">Our Work</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white p-4 shadow rounded-lg">
-          <img src="image.png" width="300" height="180" alt="Project 1" class="mb-4 rounded">
-          <h3 class="font-semibold text-lg">Inventory App</h3>
-          <p class="text-sm text-gray-600">Custom-built inventory tracking system for retail chains.</p>
+<!-- Services Section -->
+<section id="services" class="bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Billing Software Development</h5>
+            <p class="card-text">Billing software development for supermarket and small shops</p>
+          </div>
         </div>
-        <div class="bg-white p-4 shadow rounded-lg">
-          <img src="image.png" width="300" height="180" alt="Project 2" class="mb-4 rounded">
-          <h3 class="font-semibold text-lg">Health Tracker</h3>
-          <p class="text-sm text-gray-600">Mobile app for fitness monitoring and tracking goals.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">Responsive, SEO-optimized websites and platforms.</p>
+          </div>
         </div>
-        <div class="bg-white p-4 shadow rounded-lg">
-          <img src="image.png" width="300" height="180" alt="Project 3" class="mb-4 rounded">
-          <h3 class="font-semibold text-lg">CRM Dashboard</h3>
-          <p class="text-sm text-gray-600">Real-time CRM dashboard built with React and Node.js.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Mobile Apps</h5>
+            <p class="card-text">iOS and Android apps with native or cross-platform tech.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Cloud Solutions</h5>
+            <p class="card-text">Cloud-based architecture and deployments on AWS/Azure.</p>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Testimonials Section -->
-  <section class="py-16">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl font-bold">What Clients Say</h2>
-    </div>
-    <div class="max-w-3xl mx-auto px-4">
-      <div class="bg-white p-6 rounded shadow text-center">
-        <p class="italic text-gray-700">"MatrixTech Solutions Pvt Ltd delivered a great product on time. Their attention to detail and communication was excellent."</p>
-        <h4 class="mt-4 font-semibold">— Anita Rao, CTO at FinEdge</h4>
+<!-- About Section -->
+<section id="about">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">About Us</h2>
+    <p class="lead text-muted">We are a team of developers and designers delivering impactful digital products for startups and enterprises.</p>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Our Projects</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="image.png" width="300" height="180" class="card-img-top" alt="Inventory App">
+          <div class="card-body">
+            <h5 class="card-title">Inventory System</h5>
+            <p class="card-text">Retail inventory tracking web app.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="image.png" width="300" height="180" class="card-img-top" alt="Health App">
+          <div class="card-body">
+            <h5 class="card-title">Health Tracker</h5>
+            <p class="card-text">Mobile fitness and goal tracking platform.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="image.png" width="300" height="180" class="card-img-top" alt="CRM Dashboard">
+          <div class="card-body">
+            <h5 class="card-title">CRM Dashboard</h5>
+            <p class="card-text">Client relationship dashboard for enterprise sales.</p>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 bg-blue-700 text-white text-center">
-    <h2 class="text-3xl font-bold mb-4">Let’s Work Together</h2>
-    <p class="mb-6">Contact us to discuss your project requirements.</p>
+<!-- Contact Section -->
+<section id="contact" style="--bs-bg-opacity: 1;background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;">
+  <div class="container text-center text-white">
+    <h2 class="fw-bold mb-4">Contact Us</h2>
+    <p class="mb-3">Have a project in mind? Let's build it together.</p>
     <p class="mb-4"><span class="glyphicon glyphicon-map-marker"></span> TamilNadu, India</p>
     <p class="mb-4"><span class="glyphicon glyphicon-phone"></span> +91 9944751775</p>
     <p class="mb-4"><span class="glyphicon glyphicon-envelope"></span> matrixtech@gmail.com</p>
-    <a href="mailto:contact@softtech.com" class="bg-white text-blue-700 px-6 py-2 rounded-full font-semibold">Email Us</a>
-  </section>
+    <a href="mailto:contact@softtech.com" class="btn btn-light">Email Us</a>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer style="--tw-bg-opacity: 1;background-color: rgb(255 255 255);" class="py-6 bg-gray-800 text-black text-center text-sm">
-    &copy; 2025 MatrixTech Solutions. All rights reserved.
-  </footer>
+<!-- Footer -->
+<footer class="bg-white text-black text-center py-3">
+  &copy; 2025 MatrixTech Solutions. All rights reserved.
+</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
